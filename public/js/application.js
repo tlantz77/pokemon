@@ -1,7 +1,9 @@
-$(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
+// var Pokedex = require('pokedex-promise-v2');
+// var P = new Pokedex();
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+$(document).ready(function() {
+  $('#player1').on("click", function() {
+
+    $(this).text("Hello");
+  });
 });

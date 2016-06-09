@@ -1,0 +1,25 @@
+body {
+  background-image: url("http://img05.deviantart.net/9d1b/i/2011/045/c/b/pokemon_town_by_neffertity-d39ks2h.jpg");
+}
+
+h1 {
+  margin: center;
+  color: yellow;
+}
+
+#player1 {
+
+  height: 400px;
+  width: 400px;
+}
+
+#player1 img, #player2 img {
+  height: 350px;
+  width: 350px;
+}
+
+#player2 {
+  float: right;
+  height: 400px;
+  width: 400px;
+}

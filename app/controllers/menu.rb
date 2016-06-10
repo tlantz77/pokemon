@@ -3,19 +3,14 @@ get '/pokemon' do
 end
 
 post '/pokemon' do
-  poke1 = get_pokemon(params[:poke1])
-  poke2 = get_pokemon(params[:poke2])
+  poke = get_pokemon(params[:poke])
 
   if request.xhr?
     content_type :json
-    { poke1_name:   poke1["forms"][0]["name"],
-      poke1_hp:     poke1["stats"].last["base_stat"],
-      poke1_move:   poke1["moves"][1]["move"]["name"],
-
-      poke2_name:   poke2["forms"][0]["name"],
-      poke2_hp:     poke2["stats"].last["base_stat"],
-      poke2_move:   poke2["moves"][1]["move"]["name"]
-    }
+    { poke_name:   poke["forms"][0]["name"].capitalize,
+      poke_hp:     poke["stats"].last["base_stat"],
+      poke_move:   poke["moves"][1]["move"]["name"].capitalize
+    }.to_json
   else
     erb :'/main/menu'
   end

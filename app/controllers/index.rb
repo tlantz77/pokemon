@@ -1,3 +1,3 @@
 get '/' do
-  redirect '/main'
+  redirect '/pokemon'
 end

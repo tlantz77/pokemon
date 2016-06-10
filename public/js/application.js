@@ -30,9 +30,11 @@ $(document).ready(function() {
         console.log(response);
         $(`#${player}`).find('img').attr("src", `http://img.pokemondb.net/artwork/${response.poke_name.toLowerCase()}.jpg`);
 
-        $(`#${player}`).find('.poke-name').replaceWith(`<li class="poke-name">${response.poke_name}</li>`);
-        $(`#${player}`).find('.poke-hp').replaceWith(`<li class="poke-hp">${response.poke_hp}</li>`);
-        $(`#${player}`).find('.poke-move').replaceWith(`<li class="poke-move">${response.poke_move}</li>`);
+        $(`#${player}`).find('.poke-name').replaceWith(`<li class="poke-name">Name: ${response.poke_name}</li>`);
+        $(`#${player}`).find('.poke-hp').replaceWith(`<li class="poke-hp">HP: ${response.poke_hp}</li>`);
+        $(`#${player}`).find('.poke-move').replaceWith(`<li class="poke-move">Best Move: ${response.poke_move}</li>`);
+
+        $(`#${player}`).find('.poke-details').css({"color": "yellow", "font-size": "2em", "background-color": "red"});
       });
   });
 });

@@ -3,6 +3,7 @@ body {
 }
 
 h1 {
+  margin-left: 50px;
   margin: center;
   color: yellow;
 }
@@ -23,3 +24,19 @@ h1 {
   height: 400px;
   width: 400px;
 }
+
+#form-header {
+  height: 75px;
+}
+
+#poke-forms {
+  margin-top: -25px;
+  float: right;
+}
+
+#poke-forms {
+  margin: 10px;
+}
+
+
+

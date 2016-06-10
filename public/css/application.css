@@ -9,7 +9,8 @@ h1 {
 }
 
 #player1 {
-
+  margin-top: 20px;
+  padding-left: 20px;
   height: 400px;
   width: 400px;
 }
@@ -21,8 +22,10 @@ h1 {
 
 #player2 {
   float: right;
+  padding-right: 20px;
   height: 400px;
   width: 400px;
+
 }
 
 #form-header {
@@ -30,18 +33,26 @@ h1 {
 }
 
 #poke-forms {
-  margin-top: -25px;
+  margin-top: -50px;
   float: right;
 }
 
-#poke-forms {
-  margin: 10px;
+.poke-form {
+  margin: 0px 10px;
+}
+
+.poke-form .button {
+  background-color: red;
+  border-radius: 3px;
+  color: yellow;
+  height: 50px;
+
 }
 
 .poke-details {
   list-style: none;
   font-weight: bold;
-
+  border-radius: 3px;
 }
 
 
